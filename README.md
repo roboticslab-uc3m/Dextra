@@ -16,7 +16,7 @@ My final degree project comprises the development and integration of an anthropo
   <img src="./TEO_Photos/folding(3).jpg" height="400" align="center">
 </p>
 
-Based on this motivation, this document begins with the approach of the problem and ends with the evaluation of the solution provided. The scope of the proposed objectives is achieved through the development and study of several versions of the selected hand at the mechanical, electronic and software level. Multiple experiments are developed to evaluate the effectiveness of the robotic hand. In addition, the regulatory technical framework and the socio-economic environment of the project are evaluated, so that it complies satisfactorily with the established restrictions and adjusts to the current social and economic context.\\
+The scope of the proposed objectives is achieved through the development and study of several versions of the selected hand at the mechanical, electronic and software level. Multiple experiments are developed to evaluate the effectiveness of the robotic hand. In addition, the regulatory technical framework and the socio-economic environment of the project are evaluated, so that it complies satisfactorily with the established restrictions and adjusts to the current social and economic context.\\
 
 The project is oriented to numerous additional studies around their behavior in the humanoid, contemplating the expansion of the TEO functions in relation to the versatility provided by his new fully functional hands. \\
 
