@@ -38,9 +38,11 @@ The assembly instructions can be found [here](https://github.com/Alvipe/Dextra/t
 * [Dextra_TPMG90-2_CAD_files](https://github.com/jgagom/Dextra/tree/dextraTPMG90/Dextra_TPMG90-2_CAD_files) - FreeCAD source files of the printable parts of Dextra TPMG90-2
 * [Schematics](https://github.com/jgagom/Dextra/tree/dextraTPMG90/Schematics) - Electronic schematics of Dextra Original, TPMG90-1 and TPMG90-2
 * [TEO_Photos](https://github.com/jgagom/Dextra/tree/dextraTPMG90/TEO_Photos) - TEO & Dextra TPMG90-2 photos
+* [YARP - Dextra control board](https://github.com/roboticslab-uc3m/yarp-devices/tree/issue-176-dextra/libraries/YarpPlugins/DextraControlboard) - YARP plugins
 * [Control](https://github.com/Alvipe/Dextra/tree/master/Control) - Code for different control methods (EMG, GUI)
 * [Firmware](https://github.com/Alvipe/Dextra/tree/master/Firmware) - Main program and libraries that make Dextra move
 * [doc](https://github.com/Alvipe/Dextra/tree/master/doc) - Documentation files
+
 
 # License
 <a rel="license1" href="https://www.gnu.org/licenses/gpl-3.0.html"><img alt="GNU License" style="border-width:0" src="https://www.gnu.org/graphics/gplv3-88x31.png" /></a>  <a rel="license2" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
