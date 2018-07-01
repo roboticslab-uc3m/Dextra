@@ -2,23 +2,28 @@
 Dextra is a printable robotic hand with the size of a human hand. This project was initially started to build a replicable and low cost alternative to current robotic hand prostheses. However, I think this device has more potential uses, for example in robotics research (humanoid robotics, mobile platforms with manipulation capabilities) or in education, fields that could benefit from the existence of a cheap and easy to repair robotic hand, a robotic device that is replicable and hackable, and simple but functional.
 
 <p align="center">
-<img src="./doc/images/dextra/dextra2.jpg" width="400" align="center">
+<img src="./doc/images/dextra/dextra2.jpg" width="350" align="center">
 </p>
 
 There is more information about Dextra on its [hackaday.io project page](https://hackaday.io/project/9890-dextra).
 
 # Dextra TPMG90 (by J. Gago)
 
-My Industrial Technologies Engineering Bachelor's Degree Final Project comprises the development and integration of an anthropomorphic robotic hand in the humanoid robot TEO. TEO is a household companion developed by RoboticsLab, at Carlos III University of Madrid, whose current robotic hands lack the necessary functionality for the tasks that require high manual dexterity, like fabric manipulation.\\
+My Industrial Technologies Engineering Bachelor's Degree Final Project comprises the development and integration of an anthropomorphic robotic hand in the humanoid robot TEO. TEO is a household companion developed by RoboticsLab, at Carlos III University of Madrid, whose current robotic hands lack the necessary functionality for the tasks that require high manual dexterity, like fabric manipulation.
 
 <p align="center">
-<img src="./TEO_Photos/folding(4).jpg" height="400" align="center">
-  <img src="./TEO_Photos/folding(3).jpg" height="400" align="center">
+<img src="./TEO_Photos/folding(4).jpg" height="350" align="center">
+  <img src="./TEO_Photos/folding(3).jpg" height="350" align="center">
 </p>
 
-The scope of the proposed objectives is achieved through the development and study of several versions of the selected hand at the mechanical, electronic and software level. Multiple experiments are developed to evaluate the effectiveness of the robotic hand. In addition, the regulatory technical framework and the socio-economic environment of the project are evaluated, so that it complies satisfactorily with the established restrictions and adjusts to the current social and economic context.\\
+The scope of the proposed objectives is achieved through the development and study of several versions of the selected hand at the mechanical, electronic and software level. Multiple experiments are developed to evaluate the effectiveness of the robotic hand. In addition, the regulatory technical framework and the socio-economic environment of the project are evaluated, so that it complies satisfactorily with the established restrictions and adjusts to the current social and economic context.
 
-The project is oriented to numerous additional studies around their behavior in the humanoid, contemplating the expansion of the TEO functions in relation to the versatility provided by his new fully functional hands. \\
+<p align="center">
+<img src="./Dextra_TPMG90-2_CAD_files/DH-TPMG90-2.PNG" width="300" align="center">
+</p>
+
+
+The project is oriented to numerous additional studies around their behavior in the humanoid, contemplating the expansion of the TEO functions in relation to the versatility provided by his new fully functional hands. 
 
 <p align="center">
 <img src="./Dextra_TPMG90-2_CAD_files/Cutkosky_Taxonomy/integracion.jpg" width="400" align="center">
