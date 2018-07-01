@@ -29,7 +29,7 @@ The project is oriented to numerous additional studies around their behavior in 
 <img src="./Dextra_TPMG90-2_CAD_files/Cutkosky_Taxonomy/integracion.jpg" width="400" align="center">
 </p>
 
-# Assembly instructions
+# Useful documents
 The assembly instructions can be found [here](https://github.com/Alvipe/Dextra/tree/master/doc/dextra_assembly_instructions.pdf).
 
 # Project index
