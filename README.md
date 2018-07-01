@@ -9,7 +9,7 @@ There is more information about Dextra on its [hackaday.io project page](https:/
 
 # Dextra TPMG90 (by J. Gago)
 
-My final degree project comprises the development and integration of an anthropomorphic robotic hand in the humanoid robot TEO. TEO is a household companion developed by RoboticsLab, at Carlos III University of Madrid, whose current robotic hands lack the necessary functionality for the tasks that require high manual dexterity, like fabric manipulation.\\
+My Industrial Technologies Engineering Bachelor's Degree Final Project comprises the development and integration of an anthropomorphic robotic hand in the humanoid robot TEO. TEO is a household companion developed by RoboticsLab, at Carlos III University of Madrid, whose current robotic hands lack the necessary functionality for the tasks that require high manual dexterity, like fabric manipulation.\\
 
 <p align="center">
 <img src="./TEO_Photos/folding(4).jpg" height="400" align="center">
