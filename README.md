@@ -21,9 +21,13 @@ There is more information about Dextra on its [hackaday.io project page](https:/
 The assembly instructions can be found [here](https://github.com/Alvipe/Dextra/tree/master/doc/dextra_assembly_instructions.pdf).
 
 # Project index
+* [Dextra_ORIGINAL_CAD_files](https://github.com/jgagom/Dextra/tree/dextraTPMG90/Dextra_ORIGINAL_CAD_files) - FreeCAD source files of the printable parts of Dextra Original
+* [Dextra_TPMG90-1_CAD_files](https://github.com/jgagom/Dextra/tree/dextraTPMG90/Dextra_TPMG90-1_CAD_files) - FreeCAD source files of the printable parts of Dextra TPMG90-1
+* [Dextra_TPMG90-2_CAD_files](https://github.com/jgagom/Dextra/tree/dextraTPMG90/Dextra_TPMG90-2_CAD_files) - FreeCAD source files of the printable parts of Dextra TPMG90-2
+* [Schematics](https://github.com/jgagom/Dextra/tree/dextraTPMG90/Schematics) - Electronic schematics of Dextra Original, TPMG90-1 and TPMG90-2
+* [TEO_Photos](https://github.com/jgagom/Dextra/tree/dextraTPMG90/TEO_Photos) - TEO & Dextra TPMG90-2 photos
 * [Control](https://github.com/Alvipe/Dextra/tree/master/Control) - Code for different control methods (EMG, GUI)
 * [Firmware](https://github.com/Alvipe/Dextra/tree/master/Firmware) - Main program and libraries that make Dextra move
-* [Parts](https://github.com/Alvipe/Dextra/tree/master/Parts) - STL files of the printable parts of Dextra and its corresponding FreeCAD source files
 * [doc](https://github.com/Alvipe/Dextra/tree/master/doc) - Documentation files
 
 # License
