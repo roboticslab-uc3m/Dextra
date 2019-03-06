@@ -3,7 +3,7 @@
 The main objective is to design a Printed Circuit Board (PCB) to replace the breadboard, shown in Figure 1, in the back of the right robotic hand of the humanoid robot TEO. A PCB is a board or card that electrically connects and mechanically supports electrical components. These connections are made with a series of conductive tracks or traces (usually copper ones). This copper is laminated onto or in between sheets of non-conductive material like fiberglass.
 
 <p align="center">
-<img src="./photos/1.png" width="600" align="center">
+<img src="./photos/1.png" width="900" align="center">
 </p>
 
 ## CONSIDERATIONS
@@ -132,7 +132,15 @@ Once the footprints have been assigned it is possible to read the schematic Netl
 * Place the components into the space of the designed board. For this step, the CAD file of the dorsal is used (path:  Dextra/Dextra_TPMG90-2_CAD_files/dorsalTPMG90-2.FCStd). The dimensions are specified in the figures below.
 
 <p align="center">
-<img src="./photos/16.png" width="450" align="center">
+<img src="./photos/A.png" width="400" align="center">
+<img src="./photos/16.png" width="400" align="center">
+</p>
+
+<p align="center">
+<img src="./photos/B.png" width="200" align="center">
+<img src="./photos/C.png" width="200" align="center">
+<img src="./photos/D.png" width="200" align="center">
+<img src="./photos/E.png" width="200" align="center">
 </p>
 
 The shape and distribution have been drawn in the edge cap layer (See Annex) using graphic lines and circles (and using different grids to draw an accurate design). (Defining the outline)
@@ -168,14 +176,14 @@ In KiCad the following layers are available.
 
 * Layers that have a front and back version start with F. (for front) and B. (for back)
 * The F.Cu and B.Cu layers are the copper layers
-    * If there are additional copper layers they use the names In[number].Cu by default
+    * If there are additional copper layers they use the names In [number].Cu by default
     * The names for copper layers can be changed by the designer.
 * F.Silk and B.Silk define artwork on the silkscreen layers.
     * Typically this is the white artwork printed on the board.
-* F.Mask and B.Mask define the area free of soldermask 193.
+* F.Mask and B.Mask define the area free of [soldermask](https://en.wikipedia.org/wiki/Solder_mask) 193.
     * It is the negative of the resulting film that covers the board.
-* F.Paste and B.Paste define the area that will be covered with solder paste 88 (In datasheets often called stencil)
-    * Used for reflow soldering 32 of surface mounted devices.
+* F.Paste and B.Paste define the area that will be covered with [solder paste](https://en.wikipedia.org/wiki/Solder_paste) 88 (In datasheets often called stencil)
+    * Used for [reflow soldering](https://en.wikipedia.org/wiki/Reflow_soldering) 32 of surface mounted devices.
 * Edge.cuts: This layer is used to communicate with the manufacturer what the final board shape should look like.
     * The edge-cut is must not contain self intersections
     * Polygons on the edge-cut must be continuous and closed.
@@ -186,8 +194,7 @@ In KiCad the following layers are available.
     * The courtyard defines where no other component should be placed.
         * The size of this area depends on your manufacturing capabilities.
         * It also depends on your needs. (If you want the possibility to rework the pcb, you might need a larger area compared to when you do not plan to do this.)
-        * The rules used in the official lib are defined in the KLC - Rule
-* F5.3 87 and are closely aligned to industry standards.
+        * The rules used in the official lib are defined in the [KLC - Rule](http://kicad-pcb.org/libraries/klc/F5.3/) F5.3 87 and are closely aligned to industry standards.
     * In KiCad 4.0.x courtyard violations are not checked by the design rule check
 * F.Fab and B.Fab are documentation layers.
     * These are intended to be used for communicating with board assembly houses and for user documentation.
