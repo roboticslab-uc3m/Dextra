@@ -77,11 +77,11 @@ The starting point of this project is based on the connections shown in the sche
 The symbols for the components are stored in two different schematic libraries located in “Project folder/Libraries/dorsalSchematic_Components/ and are named: <b>DRV8838_Pololu.lib</b> and <b>teensy.lib</b>. In the case of the driver, the components were created manually using KiCad and in the case of the Teensy it was downloaded from a GitHub [repository](https://github.com/XenGi/teensy_library). The pair of figures bellow show the schematic symbols for Teensy 3.2 and Pololu Driver, respectively.
 
 <p align="center">
-<img src="./photos/9.png" width="900" align="center">
+<img src="./photos/9.png" width="750" align="center">
 </p>
 
 <p align="center">
-<img src="./photos/10.png" width="900" align="center">
+<img src="./photos/10.png" width="750" align="center">
 </p>
 
 The final schematic is shown bellow. Standard connectors have been used for the 6 encoders, the Servo and the battery input. For the drivers and the Teensy the symbols already mentioned are shown. In order to establish the connections global labels, no connection flags, and power ports have been used. Final step is <b>to annotate the components and create the Netlist</b> which is later import in the PCB design.
@@ -110,21 +110,21 @@ In order to assign each correspondent footprint to the symbols, a new library of
 created manually using the dimension specification in its datasheet (shown below).
 
 <p align="center">
-<img src="./photos/12.png" width="900" align="center">
+<img src="./photos/12.png" width="750" align="center">
 </p>
 
 <p align="center">
-<img src="./photos/13.png" width="900" align="center">
+<img src="./photos/13.png" width="750" align="center">
 </p>
 
 The footprint for the Teensy has been downloaded for the GitHub [repository](https://github.com/XenGi/teensy.pretty) and edited in KiCad to delete the pins which are not used in the design. Only pins on sides have been kept, as shown in the figures below, to facilitate routing.
 
 <p align="center">
-<img src="./photos/14.png" width="900" align="center">
+<img src="./photos/14.png" width="750" align="center">
 </p>
 
 <p align="center">
-<img src="./photos/15.png" width="900" align="center">
+<img src="./photos/15.png" width="750" align="center">
 </p>
 
 Once the footprints have been assigned it is possible to read the schematic Netlist and start designing the PCB. Steps follow for the design are explained below:
