@@ -1,6 +1,6 @@
 # PRINTED CIRCUIT BOARD FOR DEXTRA TPMG90-2
 ## OBJECTIVE 
-The main objective is to design a Printed Circuit Board (PCB) to replace the breadboard, shown in Figure 1, in the back of the right robotic hand of the humanoid robot TEO. A PCB is a board or card that electrically connects and mechanically supports electrical components. These connections are made with a series of conductive tracks or traces (usually copper ones). This copper is laminated onto or in between sheets of non-conductive material like fiberglass.
+The main objective is to design a Printed Circuit Board (PCB) to replace the breadboard, shown bellow, in the back of the right robotic hand of the humanoid robot TEO. A PCB is a board or card that electrically connects and mechanically supports electrical components. These connections are made with a series of conductive tracks or traces (usually copper ones). This copper is laminated onto or in between sheets of non-conductive material like fiberglass.
 
 <p align="center">
 <img src="./photos/1.png" width="900" align="center">
