@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name DRV8838_Pololu)(type Legacy)(uri C:/Users/chernandez/Desktop/HandPCBProject/DorsalTPMG90/Libraries/dorsalSchematic_Components/DRV8838_Pololu.lib)(options "")(descr ""))
+  (lib (name DorsalTPMG90-rescue)(type Legacy)(uri ${KIPRJMOD}/DorsalTPMG90-rescue.lib)(options "")(descr ""))
+)
