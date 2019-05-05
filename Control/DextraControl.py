@@ -9,7 +9,7 @@ import synapse
 class RootWidget(TabbedPanel):
     ser = None
     scheduled_event = None
-    setpoint_list = ListProperty([10.0, 0.0, 0.0, 0.0, 0.0, 0.0])
+    setpoint_list = ListProperty([0.0, 0.0, 0.0, 0.0, 0.0, 0.0])
     serial_port_list = ListProperty([])
     devices = ObjectProperty(None)
     status = ObjectProperty(None)
