@@ -6,7 +6,7 @@
 
 #define pidTime 10 //ms
 
-Finger thumb(2,4,23,22);
+Finger thumb(2,1,23,22);
 Finger indx(7,5,21,20);
 Finger middle(8,6,19,18);
 Finger ring(11,9,17,16);
@@ -50,7 +50,7 @@ void setup() {
     attachInterrupt(digitalPinToInterrupt(middle._encoderPinA), middleReadEncoder, CHANGE);
     attachInterrupt(digitalPinToInterrupt(ring._encoderPinA), ringReadEncoder, CHANGE);
     attachInterrupt(digitalPinToInterrupt(pinky._encoderPinA), pinkyReadEncoder, CHANGE);
-    abductor.attach(3);
+    abductor.attach(0);
     abductor.write(abductorAngle);
     MsTimer2::set(pidTime, handControl);
     MsTimer2::start();
