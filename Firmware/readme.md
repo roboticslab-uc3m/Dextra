@@ -7,3 +7,5 @@ For Teensy 3.1 (Arduino-compatible board):
 ~/Dextra$ cd Firmware/Teensy31
 ~/Dextra/Firmware/Teensy31$ platformio run --target upload
 ```
+
+Make sure you have sufficient rights to interface with the Teensy H/W. This can be accomplished by copying `49-teensy.rules` to `/etc/udev/rules.d/`.
