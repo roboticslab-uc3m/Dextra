@@ -1,5 +1,5 @@
-# Dextra Original (by Á. Villoslada)
-Dextra is a printable robotic hand with the size of a human hand. This project was initially started to build a replicable and low cost alternative to current robotic hand prostheses. However, I think this device has more potential uses, for example in robotics research (humanoid robotics, mobile platforms with manipulation capabilities) or in education, fields that could benefit from the existence of a cheap and easy to repair robotic hand, a robotic device that is replicable and hackable, and simple but functional.
+# Dextra
+Dextra is a printable robotic hand with the size of a human hand. This project was initially started by A. Villoslada to build a replicable and low cost alternative to current robotic hand prostheses. However, I think this device has more potential uses, for example in robotics research (humanoid robotics, mobile platforms with manipulation capabilities) or in education, fields that could benefit from the existence of a cheap and easy to repair robotic hand, a robotic device that is replicable and hackable, and simple but functional.
 
 <p align="center">
 <img src="./doc/images/dextra/dextra2.jpg" width="350" align="center">
@@ -7,9 +7,9 @@ Dextra is a printable robotic hand with the size of a human hand. This project w
 
 There is more information about Dextra on its [hackaday.io project page](https://hackaday.io/project/9890-dextra).
 
-# Dextra TPMG90 (by J. Gago)
+# Dextra TPMG90
 
-My Industrial Technologies Engineering Bachelor's Degree Final Project comprises the development and integration of an anthropomorphic robotic hand in the humanoid robot TEO. TEO is a household companion developed by RoboticsLab, at Carlos III University of Madrid, whose current robotic hands lack the necessary functionality for the tasks that require high manual dexterity, like fabric manipulation.
+J. Gago Industrial Technologies Engineering Bachelor's Degree Final Project comprises the development and integration of an anthropomorphic robotic hand in the humanoid robot TEO. TEO is a household companion developed by RoboticsLab, at Carlos III University of Madrid, whose current robotic hands lack the necessary functionality for the tasks that require high manual dexterity, like fabric manipulation.
 
 <p align="center">
 <img src="./TEO_Photos/folding(4).jpg" height="350" align="center">
