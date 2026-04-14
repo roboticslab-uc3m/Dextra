@@ -4,7 +4,7 @@ To run the control GUI, connect the microcontroller running the Dextra firmware 
 
 ```bash
 ~/Dextra$ cd Control
-~/Dextra/Control$ python DextraControl.py
+~/Dextra/Control$ python3 DextraControl.py
 ```
 
 First, the device to which we want to communicate (the microcontroller running the Dextra firmware) has to be selected from a dropdown list. Once the desired device is selected (in this case the one connected to COM4; in this example the app is running on a Windows PC), we click on the connect button. If there is no device connected to the PC, or no device is selected from the dropdown list, an error message is displayed.
