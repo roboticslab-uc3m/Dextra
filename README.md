@@ -23,7 +23,7 @@ The scope of the proposed objectives is achieved through the development and stu
 </p>
 
 
-The project is oriented to numerous additional studies around their behavior in the humanoid, contemplating the expansion of the TEO functions in relation to the versatility provided by his new fully functional hands. 
+The project is oriented to numerous additional studies around their behavior in the humanoid, contemplating the expansion of the TEO functions in relation to the versatility provided by his new fully functional hands.
 
 <p align="center">
 <img src="./Dextra_TPMG90-2_CAD_files/Cutkosky_Taxonomy/integracion.jpg" width="400" align="center">

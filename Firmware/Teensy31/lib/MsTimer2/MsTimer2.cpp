@@ -3,7 +3,7 @@
   Javier Valencia <javiervalencia80@gmail.com>
 
   https://github.com/PaulStoffregen/MsTimer2
-  
+
   History:
 	6/Jun/14  - V0.7 added support for Teensy 3.0 & 3.1
   	29/Dec/11 - V0.6 added support for ATmega32u4, AT90USB646, AT90USB1286 (paul@pjrc.com)
@@ -11,13 +11,13 @@
 		note: uses timer4 on Atmega32u4
   	29/May/09 - V0.5 added support for Atmega1280 (thanks to Manuel Negri)
   	19/Mar/09 - V0.4 added support for ATmega328P (thanks to Jerome Despatis)
-  	11/Jun/08 - V0.3 
+  	11/Jun/08 - V0.3
   		changes to allow working with different CPU frequencies
   		added support for ATMega128 (using timer2)
   		compatible with ATMega48/88/168/8
 	10/May/08 - V0.2 added some security tests and volatile keywords
 	9/May/08 - V0.1 released working on ATMEGA168 only
-	
+
 
   This library is free software; you can redistribute it and/or
   modify it under the terms of the GNU Lesser General Public
@@ -47,12 +47,12 @@ static IntervalTimer itimer;
 
 void MsTimer2::set(unsigned long ms, void (*f)()) {
 	float prescaler = 0.0;
-	
+
 	if (ms == 0)
 		msecs = 1;
 	else
 		msecs = ms;
-		
+
 	func = f;
 
 #if defined (__AVR_ATmega168__) || defined (__AVR_ATmega48__) || defined (__AVR_ATmega88__) || defined (__AVR_ATmega328P__) || defined(__AVR_ATmega1280__) || defined(__AVR_ATmega2560__) || defined(__AVR_AT90USB646__) || defined(__AVR_AT90USB1286__)
@@ -61,7 +61,7 @@ void MsTimer2::set(unsigned long ms, void (*f)()) {
 	TCCR2B &= ~(1<<WGM22);
 	ASSR &= ~(1<<AS2);
 	TIMSK2 &= ~(1<<OCIE2A);
-	
+
 	if ((F_CPU >= 1000000UL) && (F_CPU <= 16000000UL)) {	// prescaler set to 64
 		TCCR2B |= (1<<CS22);
 		TCCR2B &= ~((1<<CS21) | (1<<CS20));
@@ -80,7 +80,7 @@ void MsTimer2::set(unsigned long ms, void (*f)()) {
 	TCCR2 &= ~((1<<WGM21) | (1<<WGM20));
 	TIMSK &= ~(1<<OCIE2);
 	ASSR &= ~(1<<AS2);
-	
+
 	if ((F_CPU >= 1000000UL) && (F_CPU <= 16000000UL)) {	// prescaler set to 64
 		TCCR2 |= (1<<CS22);
 		TCCR2 &= ~((1<<CS21) | (1<<CS20));
@@ -98,7 +98,7 @@ void MsTimer2::set(unsigned long ms, void (*f)()) {
 	TIMSK &= ~(1<<TOIE2);
 	TCCR2 &= ~((1<<WGM21) | (1<<WGM20));
 	TIMSK &= ~(1<<OCIE2);
-	
+
 	if ((F_CPU >= 1000000UL) && (F_CPU <= 16000000UL)) {	// prescaler set to 64
 		TCCR2 |= ((1<<CS21) | (1<<CS20));
 		TCCR2 &= ~(1<<CS22);
@@ -189,7 +189,7 @@ void MsTimer2::stop() {
 
 void MsTimer2::_overflow() {
 	count += 1;
-	
+
 	if (count >= msecs && !overflowing) {
 		overflowing = 1;
 		count = count - msecs; // subtract ms to catch missed overflows
@@ -217,4 +217,3 @@ ISR(TIMER2_OVF_vect) {
 	MsTimer2::_overflow();
 }
 #endif // AVR
-

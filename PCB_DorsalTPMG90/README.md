@@ -1,5 +1,5 @@
 # PRINTED CIRCUIT BOARD FOR DEXTRA TPMG90-2
-## OBJECTIVE 
+## OBJECTIVE
 The main objective is to design a Printed Circuit Board (PCB) to replace the breadboard, shown bellow, in the back of the right robotic hand of the humanoid robot TEO. A PCB is a board or card that electrically connects and mechanically supports electrical components. These connections are made with a series of conductive tracks or traces (usually copper ones). This copper is laminated onto or in between sheets of non-conductive material like fiberglass.
 
 <p align="center">
@@ -151,7 +151,7 @@ The shape and distribution have been drawn in the edge cap layer (See Annex) usi
 
 The next step is drawing traces to make air wires disappear (checking always the design rules check DRC). If there are any issues with the layout (such as traces being too close together) it will appear there, as well as the connections which should be made with copper traces. Traces have been drawn in front cupper layer and back cupper layer, using only 45 degree bends to make connections. Considerations:
 
-* Power lines /Power traces (VBat in our case) are larger than signal traces as they need to carry much more current. Theoretically the trace supplying power needs to support up to 1.7 A, according to Pololu DRV8838 datasheet. Trace width calculator (0.676 mm). 
+* Power lines /Power traces (VBat in our case) are larger than signal traces as they need to carry much more current. Theoretically the trace supplying power needs to support up to 1.7 A, according to Pololu DRV8838 datasheet. Trace width calculator (0.676 mm).
 * Connect first pads which are close together.
 * Traces have not been used to connect the Ground and VCC (+3.3V) nodes as a Cu pour will be used to make those connections. A copper pour is an area in the PCB that is filled with copper. The pour is usually connected to DC voltage (Back Cu layer in our design) and Ground (Front Cu layer in our design). Its use reduces radio emissions from traces
 that are surrounded by this pour especially in circuits with higher frequencies.
