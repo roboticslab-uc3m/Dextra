@@ -3,8 +3,10 @@
 
 #define Kp 1000
 #define Kd 0
-#define winderRadius 4.5
+#define winderRadius 4.775 // 4.5 (proper winder radius) + 0.275 (half of the cable width)
 #define angularRes 2 * 3.14159 / 6000 // 2 * pi / number of encoder tics per motor revolution
+#define maxPosition 22
+#define minPosition -12
 
 Finger::Finger(int phase, int enable, int encoderPinA, int encoderPinB)
 {
@@ -22,27 +24,13 @@ Finger::Finger(int phase, int enable, int encoderPinA, int encoderPinB)
 
 void Finger::readEncoder()
 {
-    if (digitalRead(_encoderPinA) == HIGH)
+    if (digitalRead(_encoderPinA) == HIGH ^ digitalRead(_encoderPinB) == HIGH)
     {
-        if (digitalRead(_encoderPinB) == LOW)
-        {
-            encoderCount++;
-        }
-        else
-        {
-            encoderCount--;
-        }
+        encoderCount++;
     }
     else
     {
-        if (digitalRead(_encoderPinB) == HIGH)
-        {
-            encoderCount++;
-        }
-        else
-        {
-            encoderCount--;
-        }
+        encoderCount--;
     }
 }
 
@@ -55,7 +43,7 @@ void Finger::positionPID()
     lastError = error;
     lastPosition = position;
 
-    if (position > 22 || position < -12)
+    if (position > maxPosition || position < minPosition)
     {
         analogWrite(_enable, 0);
     }
@@ -65,29 +53,20 @@ void Finger::positionPID()
         {
             pwmControl = constrain(control, 0, 255);
             digitalWrite(_phase, LOW);
-
-            if (pwmControl > 25)
-            {
-                analogWrite(_enable, pwmControl);
-            }
-            else
-            {
-                analogWrite(_enable, 0);
-            }
         }
         else
         {
             pwmControl = constrain(abs(control), 0, 255);
             digitalWrite(_phase, HIGH);
+        }
 
-            if (pwmControl > 25)
-            {
-                analogWrite(_enable, pwmControl);
-            }
-            else
-            {
-                analogWrite(_enable, 0);
-            }
+        if (pwmControl > 25)
+        {
+            analogWrite(_enable, pwmControl);
+        }
+        else
+        {
+            analogWrite(_enable, 0);
         }
     }
 }
@@ -96,16 +75,17 @@ void Finger::writePosition(float desiredPosition)
 {
     cli();
 
-    if (desiredPosition > 22)
+    if (desiredPosition > maxPosition)
     {
-        desiredPosition = 22;
+        desiredPosition = maxPosition;
     }
-    else if (desiredPosition < -12)
+    else if (desiredPosition < minPosition)
     {
-        desiredPosition = -12;
+        desiredPosition = minPosition;
     }
 
     setPoint = desiredPosition;
+
     sei();
 }
 
@@ -127,5 +107,6 @@ float Finger::readPosition(char mode)
     }
 
     sei();
-    return 0;
+
+    return 0.0f;
 }

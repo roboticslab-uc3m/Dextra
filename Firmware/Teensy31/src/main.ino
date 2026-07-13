@@ -4,14 +4,16 @@
 #include <Servo.h>
 #include <MsTimer2.h>
 
-#define pidTime 10 //ms
+#define pidTime 10 // ms
 
 Finger thumb(2,1,23,22);
 Finger indx(7,5,21,20);
 Finger middle(8,6,19,18);
 Finger ring(11,9,17,16);
 Finger pinky(12,10,15,14);
+
 Servo abductor;
+
 Synapse dataLink(Serial);
 
 float abductorAngle = map(10, 0, 90, 20, 110);
@@ -62,7 +64,6 @@ void setup() {
 void loop() {
     float setPointArray[6];
     dataLink.readSetPoints(&setPointArray[0]);
-    // delay(100);
     abductorAngle = map(setPointArray[0], 0, 90, 20, 110);
     abductor.write(abductorAngle);
     thumb.writePosition(setPointArray[1]);
