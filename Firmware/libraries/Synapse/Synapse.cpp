@@ -120,5 +120,6 @@ void Synapse::writeDataArray(float * dataArrayOut)
 
     message[messageSize + 1] = xorCheck;
     message[messageSize + 2] = footer;
+
     _serial->write(message, messageSize + 3);
 }

@@ -1,0 +1,5 @@
+{
+    "name": "Finger",
+    "version": "1.0.0",
+    "description": "A library for interfacing with fingerprint sensors."
+}

@@ -1,0 +1,5 @@
+{
+    "name": "Synapse",
+    "version": "1.0.0",
+    "description": "A library for interfacing with Synapse devices."
+}

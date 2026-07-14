@@ -52,20 +52,27 @@ void setup() {
     attachInterrupt(digitalPinToInterrupt(middle._encoderPinA), middleReadEncoder, CHANGE);
     attachInterrupt(digitalPinToInterrupt(ring._encoderPinA), ringReadEncoder, CHANGE);
     attachInterrupt(digitalPinToInterrupt(pinky._encoderPinA), pinkyReadEncoder, CHANGE);
+
     abductor.attach(0);
     abductor.write(abductorAngle);
+
     MsTimer2::set(pidTime, handControl);
     MsTimer2::start();
+
     Serial.begin(115200);
+
     pinMode(13, OUTPUT);
     digitalWrite(13, LOW);
 }
 
 void loop() {
     float setPointArray[6];
+
     dataLink.readSetPoints(&setPointArray[0]);
+
     abductorAngle = map(setPointArray[0], 0, 90, 20, 110);
     abductor.write(abductorAngle);
+
     thumb.writePosition(setPointArray[1]);
     indx.writePosition(setPointArray[2]);
     middle.writePosition(setPointArray[3]);

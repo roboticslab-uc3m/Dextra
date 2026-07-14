@@ -12,12 +12,16 @@ Finger::Finger(int phase, int enable, int encoderPinA, int encoderPinB)
 {
     pinMode(encoderPinA, INPUT);
     digitalWrite(encoderPinA, HIGH);
+
     pinMode(encoderPinB, INPUT);
     digitalWrite(encoderPinB, HIGH);
+
     pinMode(phase, OUTPUT);
     pinMode(enable, OUTPUT);
+
     _phase = phase;
     _enable = enable;
+
     _encoderPinA = encoderPinA;
     _encoderPinB = encoderPinB;
 }
