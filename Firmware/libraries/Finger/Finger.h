@@ -6,13 +6,15 @@
 class Finger
 {
 public:
-    Finger(int phase, int enable, int encoderPinA, int encoderPinB);
+    Finger(int phase, int enable, int encoderPinA, int encoderPinB, float tr);
     void readEncoder();
     void positionPID();
     void writePosition(float desiredPosition);
     float readPosition(char mode);
-    int _encoderPinA, _encoderPinB, _phase, _enable;
+    int getEncoderPinA();
 private:
+    const int _phase, _enable, _encoderPinA, _encoderPinB;
+    const float tr;
     volatile int encoderCount = 0;
     volatile float angularPos = 0, position = 0, setPoint = 0;
     volatile float error = 0, control = 0, lastError = 0, lastPosition = 0;
