@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "dorsalPCB_Components")(type "KiCad")(uri "${KIPRJMOD}/Libraries/dorsalPCB_Components.pretty")(options "")(descr ""))
+)
