@@ -44,8 +44,6 @@ void Finger::positionPID()
     position = angularPos * winderRadius;
     error = setPoint - position;
     control = Kp * error + Kd * (error - lastError);
-    lastError = error;
-    lastPosition = position;
 
     if (position > maxPosition || position < minPosition)
     {
@@ -53,16 +51,8 @@ void Finger::positionPID()
     }
     else
     {
-        if (control >= 0)
-        {
-            pwmControl = constrain(control, 0, 255);
-            digitalWrite(_phase, LOW);
-        }
-        else
-        {
-            pwmControl = constrain(abs(control), 0, 255);
-            digitalWrite(_phase, HIGH);
-        }
+        pwmControl = constrain(abs(control), 0, 255);
+        digitalWrite(_phase, control >= 0 ? LOW : HIGH);
 
         if (pwmControl > 25)
         {
@@ -73,21 +63,16 @@ void Finger::positionPID()
             analogWrite(_enable, 0);
         }
     }
+
+    lastError = error;
+    lastPosition = position;
 }
 
 void Finger::writePosition(float desiredPosition)
 {
     cli();
 
-    if (desiredPosition > maxPosition)
-    {
-        desiredPosition = maxPosition;
-    }
-    else if (desiredPosition < minPosition)
-    {
-        desiredPosition = minPosition;
-    }
-
+    desiredPosition = constrain(desiredPosition, minPosition, maxPosition);
     setPoint = desiredPosition;
 
     sei();
