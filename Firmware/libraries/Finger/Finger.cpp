@@ -3,7 +3,7 @@
 
 #define Kp 1000
 #define Kd 0
-#define winderRadius 4.775 // 4.5 (proper winder radius) + 0.275 (half of the cable width) [mm]
+#define winderRadius 4.5 // [mm]
 #define angularRes 3.14159 / 3.0 // radians per encoder tick = 2 * pi / (12 * 0.5)
 #define maxPosition 22
 #define minPosition -12
