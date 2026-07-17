@@ -1,4 +1,5 @@
 # Dextra
+
 Dextra is a printable robotic hand with the size of a human hand. This project was initially started by A. Villoslada to build a replicable and low cost alternative to current robotic hand prostheses. However, I think this device has more potential uses, for example in robotics research (humanoid robotics, mobile platforms with manipulation capabilities) or in education, fields that could benefit from the existence of a cheap and easy to repair robotic hand, a robotic device that is replicable and hackable, and simple but functional.
 
 <p align="center">
@@ -13,7 +14,7 @@ J. Gago Industrial Technologies Engineering Bachelor's Degree Final Project comp
 
 <p align="center">
 <img src="doc/images/teo/folding(4).jpg" height="350" align="center">
-  <img src="doc/images/teo/folding(3).jpg" height="350" align="center">
+<img src="doc/images/teo/folding(3).jpg" height="350" align="center">
 </p>
 
 The scope of the proposed objectives is achieved through the development and study of several versions of the selected hand at the mechanical, electronic and software level. Multiple experiments are developed to evaluate the effectiveness of the robotic hand. In addition, the regulatory technical framework and the socio-economic environment of the project are evaluated, so that it complies satisfactorily with the established restrictions and adjusts to the current social and economic context.
@@ -22,17 +23,28 @@ The scope of the proposed objectives is achieved through the development and stu
 <img src="CAD/Dextra_TPMG90-2_CAD_files/DH-TPMG90-2.PNG" width="300" align="center">
 </p>
 
-
 The project is oriented to numerous additional studies around their behavior in the humanoid, contemplating the expansion of the TEO functions in relation to the versatility provided by his new fully functional hands.
 
 <p align="center">
 <img src="CAD/Dextra_TPMG90-2_CAD_files/Cutkosky_Taxonomy/integracion.jpg" width="400" align="center">
 </p>
 
+## Dextra TPMG90S
+
+Miguel Alache Manchado followed up on Jennifer Gago's work in his Bachelor's Degree Final Project (Industrial Electronics Engineering and Automation), notably improving the 3D CAD and PCB designs. This iteration is dubbed TPMG90S due to the replacement of the TPMG90 servomotor with this new model.
+
+Although compatibility with TEO is preserved, the aim was to mount this hand on the ABB CRB 15000-5 "GoFa" collaborative robot arm.
+
+<p align="center">
+<img src="doc/images/gofa/gofa1.jpg" width="400" align="center">
+</p>
+
 ## Useful documents
+
 The assembly instructions for the original Dextra can be found [here](doc/dextra_assembly_instructions.pdf).
 
 ## Project index
+
 * [CAD](CAD) - Printable parts
 * [Control](Control) - Code for different control methods (EMG, GUI)
 * [doc](doc) - Documentation files
@@ -41,9 +53,11 @@ The assembly instructions for the original Dextra can be found [here](doc/dextra
 * [Schematics](Schematics) - Electronic schematics of Dextra Original, TPMG90-1 and TPMG90-2
 
 ## License
+
 <a rel="license1" href="https://www.gnu.org/licenses/gpl-3.0.html"><img alt="GNU License" style="border-width:0" src="https://www.gnu.org/graphics/gplv3-88x31.png" /></a>  <a rel="license2" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
 
 Code is licensed under the [GPL v3 License](https://www.gnu.org/licenses/gpl-3.0.html). The rest of the work is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
 
 ## See also
+
 * [dextra-yarp-devices](https://github.com/roboticslab-uc3m/dextra-yarp-devices) - YARP plugins for Dextra control board
