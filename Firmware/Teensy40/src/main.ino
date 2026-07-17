@@ -5,13 +5,14 @@
 #include <MsTimer2.h>
 
 #define pidTime 10 // ms
-#define tr 968.41
+#define tr 379.17
 
-Finger thumb(2, 1, 23, 22, tr);
-Finger indx(7, 5, 21, 20, tr);
-Finger middle(8, 6, 19, 18, tr);
-Finger ring(11, 9, 17, 16, tr);
-Finger pinky(12, 10, 15, 14, tr);
+// phase, enable, A, B
+Finger thumb(22, 23, 21, 20, tr);
+Finger indx(14, 15,17,16, tr);
+Finger middle(12, 13,11,10, tr);
+Finger ring(8, 9,7,6, tr);
+Finger pinky(4, 5,3,2, tr);
 
 Servo abductor;
 
@@ -54,7 +55,7 @@ void setup() {
     attachInterrupt(digitalPinToInterrupt(ring.getEncoderPinA()), ringReadEncoder, CHANGE);
     attachInterrupt(digitalPinToInterrupt(pinky.getEncoderPinA()), pinkyReadEncoder, CHANGE);
 
-    abductor.attach(0);
+    abductor.attach(19);
     abductor.write(abductorAngle);
 
     MsTimer2::set(pidTime, handControl);

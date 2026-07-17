@@ -1,0 +1,9 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "DRV8838_Pololu")(type "KiCad")(uri "${KIPRJMOD}/Libraries/dorsalSchematic_Components/DRV8838_Pololu.kicad_sym")(options "")(descr ""))
+  (lib (name "teensy")(type "KiCad")(uri "${KIPRJMOD}/Libraries/dorsalSchematic_Components/teensy.kicad_sym")(options "")(descr ""))
+  (lib (name "FuseHolder")(type "KiCad")(uri "${KIPRJMOD}/Libraries/dorsalSchematic_Components/FUSE_560_1009_LTF.kicad_sym")(options "")(descr ""))
+  (lib (name "TRACO")(type "KiCad")(uri "${KIPRJMOD}/Libraries/dorsalSchematic_Components/TSR_3-2465N.kicad_sym")(options "")(descr ""))
+  (lib (name "Molex")(type "KiCad")(uri "${KIPRJMOD}/Libraries/dorsalSchematic_Components/conector_Molex_2x2.kicad_sym")(options "")(descr ""))
+  (lib (name "Cin")(type "KiCad")(uri "${KIPRJMOD}/Libraries/dorsalSchematic_Components/Cin.kicad_sym")(options "")(descr ""))
+)

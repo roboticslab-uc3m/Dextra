@@ -3,6 +3,7 @@ name: Continuous Integration
 on:
   push:
     paths:
+      - .github/workflows/ci.yml
       - 'Firmware/**'
   workflow_dispatch:
 
@@ -18,5 +19,5 @@ jobs:
           pip install platformio
       - name: Build Firmware
         run: |
-          cd Firmware/Teensy31
+          cd Firmware/Teensy40
           platformio run
